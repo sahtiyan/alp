@@ -1,6 +1,30 @@
-*.i
-*.ii
-*.gpu
+# Ignore CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+
+# Ignore CUDA generated files
+*.cu.o
+*.cu.obj
 *.ptx
 *.cubin
 *.fatbin
+*.hash
+*.log
+*.sass
+*.pdb
+cuda*/build*/
+
+# Ignore Qt project files
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.qmlproject.user
+*.qmlproject.user.*
+*.qmake.stash
+
+# Ignore build directories
+build*/
